@@ -12,5 +12,12 @@
     <groupId>lambeaux.frameworks.evoke.core</groupId>
     <artifactId>evoke-core</artifactId>
 
+    <dependencies>
+        <dependency>
+            <groupId>com.google.code.gson</groupId>
+            <artifactId>gson</artifactId>
+            <version>2.6.1</version>
+        </dependency>
+    </dependencies>
 
 </project>

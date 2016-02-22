@@ -1,7 +1,10 @@
+package Evoke.Core;
+
 /**
  * Created by lambeaux on 2/20/16.
  *
  */
-public interface DataSender {
+public interface DataMover {
     boolean send(DataSendable sendable);
+    boolean receive();
 }
