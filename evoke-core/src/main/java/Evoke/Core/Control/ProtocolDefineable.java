@@ -4,7 +4,7 @@ package Evoke.Core.Control;
  * Created by lambeaux on 2/20/16.
  *
  */
-public interface ControlProtocol {
+public interface ProtocolDefineable {
     /**
      * Based on the provided integer, perform the next step of the protocol.
      *

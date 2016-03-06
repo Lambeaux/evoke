@@ -11,6 +11,7 @@
     <modules>
         <module>evoke-core</module>
         <module>evoke-server</module>
+        <module>evoke-client</module>
     </modules>
 
 

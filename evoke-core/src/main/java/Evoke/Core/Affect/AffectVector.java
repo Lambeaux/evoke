@@ -2,7 +2,7 @@ package Evoke.Core.Affect;
 
 import java.util.HashMap;
 
-import Evoke.Core.EvokeDataObject;
+import Evoke.Core.AbstractDataObject;
 import Evoke.Core.VectorInspectable;
 import javafx.util.Pair;
 
@@ -10,7 +10,7 @@ import javafx.util.Pair;
  * Created by lambeaux on 2/21/16.
  *
  */
-public class AffectVector extends EvokeDataObject implements VectorInspectable {
+public class AffectVector extends AbstractDataObject implements VectorInspectable {
     protected HashMap<String, Object> dataComponents;
     protected SchemaReference dataSchema;
 

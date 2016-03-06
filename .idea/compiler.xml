@@ -22,6 +22,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <processorPath useClasspath="true" />
+        <module name="evoke-client" />
         <module name="evoke-core" />
         <module name="evoke-marshalling" />
         <module name="evoke-server" />
@@ -29,6 +30,7 @@
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="evoke" target="1.5" />
+      <module name="evoke-client" target="1.5" />
       <module name="evoke-core" target="1.5" />
       <module name="evoke-marshalling" target="1.5" />
       <module name="evoke-server" target="1.5" />

@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/evoke.iml" filepath="$PROJECT_DIR$/evoke.iml" />
+      <module fileurl="file://$PROJECT_DIR$/evoke-client/evoke-client.iml" filepath="$PROJECT_DIR$/evoke-client/evoke-client.iml" />
       <module fileurl="file://$PROJECT_DIR$/evoke-core/evoke-core.iml" filepath="$PROJECT_DIR$/evoke-core/evoke-core.iml" />
       <module fileurl="file://$PROJECT_DIR$/evoke-server/evoke-server.iml" filepath="$PROJECT_DIR$/evoke-server/evoke-server.iml" />
     </modules>

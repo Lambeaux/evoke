@@ -6,5 +6,5 @@ package Evoke.Core;
  */
 public interface DataMover {
     boolean send(DataSendable sendable);
-    boolean receive();
+    DataSendable receive();
 }

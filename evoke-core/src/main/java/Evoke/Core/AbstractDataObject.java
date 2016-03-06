@@ -7,7 +7,7 @@ import java.util.HashMap;
  * Created by lambeaux on 2/21/16.
  *
  */
-public class EvokeDataObject implements DataSendable {
+public abstract class AbstractDataObject implements DataSendable {
     private Date timeCreated;
 
     private Date timeLastAttempt;
@@ -19,7 +19,7 @@ public class EvokeDataObject implements DataSendable {
     /**
      *
      */
-    protected EvokeDataObject() {
+    protected AbstractDataObject() {
         timeLastAttempt = null;
         sendSuccessful = null;
 
@@ -42,30 +42,6 @@ public class EvokeDataObject implements DataSendable {
 
     /**
      *
-     * @return
-     */
-    public Date getTimeCreated() {
-        return timeCreated;
-    }
-
-    /**
-     *
-     * @return
-     */
-    public Date getTimeLastSendAttempt() {
-        return timeLastAttempt;
-    }
-
-    /**
-     *
-     * @return
-     */
-    public Boolean sendSuccessful() {
-        return sendSuccessful;
-    }
-
-    /**
-     *
      * @param key
      * @return
      */
@@ -74,5 +50,17 @@ public class EvokeDataObject implements DataSendable {
             throw new IllegalArgumentException("Cannot access metadata with null or empty key");
         }
         return metadata.get(key);
+    }
+
+    public Date getTimeCreated() {
+        return timeCreated;
+    }
+
+    public Date getTimeLastSendAttempt() {
+        return timeLastAttempt;
+    }
+
+    public Boolean sendSuccessful() {
+        return sendSuccessful;
     }
 }
