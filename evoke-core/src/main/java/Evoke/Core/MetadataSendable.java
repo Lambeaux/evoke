@@ -6,7 +6,7 @@ import java.util.Date;
  * Created by lambeaux on 2/20/16.
  *
  */
-public interface DataSendable {
+public interface MetadataSendable {
     /**
      * If data can be sent, it implies that it was created. This interface requires access to a
      * value representing the date and time of creation.
@@ -16,7 +16,7 @@ public interface DataSendable {
     Date getTimeCreated();
 
     /**
-     * To improve management of all {@link DataSendable}'s, each attempt to send the data should
+     * To improve management of all {@link MetadataSendable}'s, each attempt to send the data should
      * log an appropriate time stamp. Only the time of the latest attempt is relevant. If no
      * attempts have occurred, this value returns null.
      *

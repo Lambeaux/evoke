@@ -7,60 +7,43 @@ import java.util.HashMap;
  * Created by lambeaux on 2/21/16.
  *
  */
-public abstract class AbstractDataObject implements DataSendable {
+public abstract class AbstractDataObject implements MetadataSendable, MetadataStorable {
     private Date timeCreated;
 
-    private Date timeLastAttempt;
+    private transient Date timeLastAttempt;
 
     private transient Boolean sendSuccessful;
 
-    protected HashMap<String, Object> metadata;
-
     /**
-     *
+     * Constructor. Should be deferred to by implementations.
      */
     protected AbstractDataObject() {
         timeLastAttempt = null;
         sendSuccessful = null;
 
         timeCreated = new Date();
-        metadata = null;
     }
 
     /**
-     *
-     * @param key
-     * @param value
+     * {@inheritDoc}
      */
-    protected void addFieldToMetadata(String key, Object value) {
-        if (metadata == null) {
-            metadata = new HashMap<String, Object>();
-        }
-
-        metadata.put(key, value);
-    }
-
-    /**
-     *
-     * @param key
-     * @return
-     */
-    public Object getFieldFromMetadata(String key) {
-        if (key == null || key.isEmpty()) {
-            throw new IllegalArgumentException("Cannot access metadata with null or empty key");
-        }
-        return metadata.get(key);
-    }
-
     public Date getTimeCreated() {
         return timeCreated;
     }
 
+    /**
+     * {@inheritDoc}
+     */
     public Date getTimeLastSendAttempt() {
         return timeLastAttempt;
     }
 
+    /**
+     * {@inheritDoc}
+     */
     public Boolean sendSuccessful() {
         return sendSuccessful;
     }
+
+
 }

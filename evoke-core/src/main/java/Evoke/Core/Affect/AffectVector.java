@@ -1,9 +1,10 @@
 package Evoke.Core.Affect;
 
 import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
 
 import Evoke.Core.AbstractDataObject;
-import Evoke.Core.VectorInspectable;
 import javafx.util.Pair;
 
 /**
@@ -23,11 +24,27 @@ public class AffectVector extends AbstractDataObject implements VectorInspectabl
         return 0;
     }
 
+    public List<String> getKeys() {
+        return null;
+    }
+
     public Pair<String, Object> getComponent(int index) {
         return null;
     }
 
     public Pair<String, Object> getComponent(String key) {
+        return null;
+    }
+
+    public String getKey() {
+        return null;
+    }
+
+    public Map<String, Object> getIndexedProperties() {
+        return null;
+    }
+
+    public Map<String, Object> getUnindexedProperties() {
         return null;
     }
 }

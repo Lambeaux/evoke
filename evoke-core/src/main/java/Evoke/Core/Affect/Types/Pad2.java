@@ -1,4 +1,4 @@
-package Evoke.Core.Affect.Measurement;
+package Evoke.Core.Affect.Types;
 
 /**
  * Created by lambeaux on 2/22/16.
