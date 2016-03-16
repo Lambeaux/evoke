@@ -16,6 +16,5 @@ public class ClientDataflowNode {
     public ClientDataflowNode() {
         sentSendables = new ArrayList<MetadataSendable>();
         receivedSendables = new ArrayList<MetadataSendable>();
-
     }
 }

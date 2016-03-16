@@ -2,18 +2,19 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0"
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>evoke</artifactId>
+        <groupId>lambeaux.frameworks.evoke</groupId>
+        <version>1.0-SNAPSHOT</version>
+    </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>lambeaux.frameworks.evoke</groupId>
-    <artifactId>evoke</artifactId>
+    <groupId>lambeaux.frameworks.evoke.devices</groupId>
+    <artifactId>evoke-devices</artifactId>
     <packaging>pom</packaging>
-    <version>1.0-SNAPSHOT</version>
     <modules>
-        <module>evoke-core</module>
-        <module>evoke-server</module>
-        <module>evoke-client</module>
-        <module>evoke-storage</module>
-        <module>evoke-devices</module>
+        <module>evoke-devices-api</module>
+        <module>evoke-devices-emotiv</module>
     </modules>
 
 

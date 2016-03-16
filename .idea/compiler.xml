@@ -24,16 +24,26 @@
         <processorPath useClasspath="true" />
         <module name="evoke-client" />
         <module name="evoke-core" />
+        <module name="evoke-devices-api" />
+        <module name="evoke-devices-emotiv" />
         <module name="evoke-marshalling" />
         <module name="evoke-server" />
+        <module name="evoke-storage-api" />
+        <module name="evoke-storage-datastore" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="evoke" target="1.5" />
       <module name="evoke-client" target="1.5" />
       <module name="evoke-core" target="1.5" />
+      <module name="evoke-devices" target="1.5" />
+      <module name="evoke-devices-api" target="1.5" />
+      <module name="evoke-devices-emotiv" target="1.5" />
       <module name="evoke-marshalling" target="1.5" />
       <module name="evoke-server" target="1.5" />
+      <module name="evoke-storage" target="1.5" />
+      <module name="evoke-storage-api" target="1.5" />
+      <module name="evoke-storage-datastore" target="1.5" />
     </bytecodeTargetLevel>
   </component>
 </project>

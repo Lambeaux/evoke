@@ -5,7 +5,13 @@
       <module fileurl="file://$PROJECT_DIR$/evoke.iml" filepath="$PROJECT_DIR$/evoke.iml" />
       <module fileurl="file://$PROJECT_DIR$/evoke-client/evoke-client.iml" filepath="$PROJECT_DIR$/evoke-client/evoke-client.iml" />
       <module fileurl="file://$PROJECT_DIR$/evoke-core/evoke-core.iml" filepath="$PROJECT_DIR$/evoke-core/evoke-core.iml" />
+      <module fileurl="file://$PROJECT_DIR$/evoke-devices/evoke-devices.iml" filepath="$PROJECT_DIR$/evoke-devices/evoke-devices.iml" />
+      <module fileurl="file://$PROJECT_DIR$/evoke-devices/evoke-devices-api/evoke-devices-api.iml" filepath="$PROJECT_DIR$/evoke-devices/evoke-devices-api/evoke-devices-api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/evoke-devices/evoke-devices-emotiv/evoke-devices-emotiv.iml" filepath="$PROJECT_DIR$/evoke-devices/evoke-devices-emotiv/evoke-devices-emotiv.iml" />
       <module fileurl="file://$PROJECT_DIR$/evoke-server/evoke-server.iml" filepath="$PROJECT_DIR$/evoke-server/evoke-server.iml" />
+      <module fileurl="file://$PROJECT_DIR$/evoke-storage/evoke-storage.iml" filepath="$PROJECT_DIR$/evoke-storage/evoke-storage.iml" />
+      <module fileurl="file://$PROJECT_DIR$/evoke-storage/evoke-storage-api/evoke-storage-api.iml" filepath="$PROJECT_DIR$/evoke-storage/evoke-storage-api/evoke-storage-api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/evoke-storage/evoke-storage-datastore/evoke-storage-datastore.iml" filepath="$PROJECT_DIR$/evoke-storage/evoke-storage-datastore/evoke-storage-datastore.iml" />
     </modules>
   </component>
 </project>
