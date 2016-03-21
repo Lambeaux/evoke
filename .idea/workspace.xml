@@ -2,32 +2,37 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ad11e9b3-471e-43e5-931e-8c46442d2c3b" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/evoke-core/src/main/java/Evoke/Core/Identity/PlaySession.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/evoke-devices/evoke-devices-api/evoke-devices-api.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/evoke-devices/evoke-devices-api/pom.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/evoke-devices/evoke-devices-emotiv/evoke-devices-emotiv.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/evoke-devices/evoke-devices-emotiv/pom.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/evoke-devices/evoke-devices.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/evoke-devices/pom.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/evoke-storage/evoke-storage-api/evoke-storage-api.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/evoke-storage/evoke-storage-api/pom.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/evoke-storage/evoke-storage-api/src/main/java/Evoke/Storage/AdapterRegistry.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/evoke-storage/evoke-storage-api/src/main/java/Evoke/Storage/ObjectTransformer.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/evoke-storage/evoke-storage-api/src/main/java/Evoke/Storage/StorageAdapter.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/evoke-storage/evoke-storage-api/src/main/java/Evoke/Storage/StorageProvider.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/evoke-storage/evoke-storage-datastore/evoke-storage-datastore.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/evoke-storage/evoke-storage-datastore/pom.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/evoke-storage/evoke-storage.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/evoke-storage/pom.xml" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/evoke-core/src/main/java/Evoke/Core/Identity/AffectGameSession.java" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/compiler.xml" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/evoke-core/src/main/java/Evoke/Core/Affect/AffectContainer.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/evoke-core/src/main/java/Evoke/Core/ClientReceiver.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/evoke-core/src/main/java/Evoke/Core/ClientWorkerNode.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/evoke-core/src/main/java/Evoke/Core/DescribableProvider.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/evoke-core/src/main/java/Evoke/Core/Game/GameAction.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/evoke-core/src/main/java/Evoke/Core/Game/OntologyDefinition.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/evoke-core/src/main/java/Evoke/Core/Game/OntologyReference.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/evoke-core/src/main/java/Evoke/Core/Moveable.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/evoke-core/src/main/java/Evoke/Core/MoveableResult.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/evoke-core/src/main/java/Evoke/Core/Mover.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/evoke-core/src/main/java/Evoke/Core/Session/PlaySegment.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/evoke-core/src/main/java/Evoke/Core/Session/SegmentationStrategy.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/evoke-storage/evoke-storage-api/src/main/java/Evoke/Storage/Storable.java" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evoke-core/src/main/java/Evoke/Core/AbstractDataObject.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evoke-core/src/main/java/Evoke/Core/Affect/AffectEvent.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evoke-core/src/main/java/Evoke/Core/Affect/VectorDescribable.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evoke-core/src/main/java/Evoke/Core/ClientDataflowNode.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evoke-core/src/main/java/Evoke/Core/Game/GameEvent.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evoke-core/src/main/java/Evoke/Core/MetadataMover.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evoke-core/src/main/java/Evoke/Core/MetadataSendable.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evoke-core/src/main/java/Evoke/Core/MetadataStorable.java" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/evoke-client/src/main/java/Evoke/Client/GsonDataMover.java" afterPath="$PROJECT_DIR$/evoke-client/src/main/java/Evoke/Client/GsonMover.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/evoke-core/src/main/java/Evoke/Core/Control/AbstractControlProtocol.java" afterPath="$PROJECT_DIR$/evoke-core/src/main/java/Evoke/Core/Control/ControlProtocol.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/evoke-core/src/main/java/Evoke/Core/Control/ProtocolDefineable.java" afterPath="$PROJECT_DIR$/evoke-core/src/main/java/Evoke/Core/Control/Protocol.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/evoke-core/src/main/java/Evoke/Core/Identity/AffectSubject.java" afterPath="$PROJECT_DIR$/evoke-core/src/main/java/Evoke/Core/Session/PlaySubject.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/evoke-core/src/main/java/Evoke/Core/Identity/PlaySession.java" afterPath="$PROJECT_DIR$/evoke-core/src/main/java/Evoke/Core/Session/PlaySession.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/evoke-core/src/main/java/Evoke/Core/MetadataSerializer.java" afterPath="$PROJECT_DIR$/evoke-core/src/main/java/Evoke/Core/Marshaller.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/evoke-core/src/main/java/Evoke/Core/Affect/AffectVector.java" afterPath="$PROJECT_DIR$/evoke-core/src/main/java/Evoke/Core/Affect/AffectVector.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/evoke-core/src/main/java/Evoke/Core/ClientDataflowNode.java" afterPath="$PROJECT_DIR$/evoke-core/src/main/java/Evoke/Core/ClientDataflowNode.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/evoke-core/src/main/java/Evoke/Core/Identity/AffectSubject.java" afterPath="$PROJECT_DIR$/evoke-core/src/main/java/Evoke/Core/Identity/AffectSubject.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/evoke-core/src/main/java/Evoke/Core/MetadataStorable.java" afterPath="$PROJECT_DIR$/evoke-core/src/main/java/Evoke/Core/MetadataStorable.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/evoke-core/src/main/java/Evoke/Core/Affect/SchemaDefinition.java" afterPath="$PROJECT_DIR$/evoke-core/src/main/java/Evoke/Core/Affect/SchemaDefinition.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/evoke-core/src/main/java/Evoke/Core/Affect/VectorInspectable.java" afterPath="$PROJECT_DIR$/evoke-core/src/main/java/Evoke/Core/Affect/VectorInspectable.java" />
     </list>
     <ignored path="evoke.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -60,31 +65,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="450">
-      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/evoke-storage/evoke-storage-datastore/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-9.935484">
-              <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AffectVector.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/evoke-core/src/main/java/Evoke/Core/Affect/AffectVector.java">
+      <file leaf-file-name="ClientWorkerNode.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/evoke-core/src/main/java/Evoke/Core/ClientWorkerNode.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+              <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MetadataSendable.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/evoke-core/src/main/java/Evoke/Core/MetadataSendable.java">
+      <file leaf-file-name="ClientReceiver.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/evoke-core/src/main/java/Evoke/Core/ClientReceiver.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.07603686">
-              <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.15811089">
+              <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -111,20 +106,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/evoke-core/src/main/java/EvokeClientNode.java" />
-        <option value="$PROJECT_DIR$/evoke-core/src/main/java/DataSendable.java" />
-        <option value="$PROJECT_DIR$/evoke-core/src/main/java/DataControllable.java" />
-        <option value="$PROJECT_DIR$/evoke-core/src/main/java/Control/EvokeControlObject.java" />
-        <option value="$PROJECT_DIR$/evoke-core/src/main/java/Core/DataControllable.java" />
-        <option value="$PROJECT_DIR$/evoke-core/src/main/java/Core/Control/EvokeControlObject.java" />
-        <option value="$PROJECT_DIR$/evoke-core/src/main/java/Evoke/Core/Control/EvokeControlObject.java" />
-        <option value="$PROJECT_DIR$/evoke-core/src/main/java/Evoke/Core/DataControllable.java" />
-        <option value="$PROJECT_DIR$/evoke-core/src/main/java/Evoke/Core/ControlProtocol.java" />
-        <option value="$PROJECT_DIR$/evoke-core/src/main/java/Evoke/Core/Affect/Measurement/Pad2.java" />
-        <option value="$PROJECT_DIR$/evoke-core/src/main/java/Evoke/Core/Affect/SchemaReference.java" />
-        <option value="$PROJECT_DIR$/evoke-core/src/main/java/Evoke/Core/Control/EvokeControlProtocol.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/evoke-core/src/main/java/Evoke/Core/EvokeDataObject.java" />
         <option value="$PROJECT_DIR$/evoke-core/src/main/java/Evoke/Core/DataSendable.java" />
         <option value="$PROJECT_DIR$/evoke-core/src/main/java/Evoke/Core/EvokeClientNode.java" />
         <option value="$PROJECT_DIR$/evoke-client/src/main/java/Evoke/Client/Program.java" />
@@ -139,14 +120,10 @@
         <option value="$PROJECT_DIR$/evoke-client/pom.xml" />
         <option value="$PROJECT_DIR$/evoke-core/src/main/java/Evoke/Core/DataMover.java" />
         <option value="$PROJECT_DIR$/evoke-core/src/main/java/Evoke/Core/DataFlowException.java" />
-        <option value="$PROJECT_DIR$/evoke-client/src/main/java/Evoke/Client/GsonDataMover.java" />
         <option value="$PROJECT_DIR$/evoke-core/src/main/java/Evoke/Core/AbstractClientNode.java" />
         <option value="$PROJECT_DIR$/evoke-core/src/main/java/Evoke/Core/MetadataTransformer.java" />
         <option value="$PROJECT_DIR$/evoke-core/src/main/java/Evoke/Core/VectorInspectable.java" />
-        <option value="$PROJECT_DIR$/evoke-core/src/main/java/Evoke/Core/Affect/VectorInspectable.java" />
         <option value="$PROJECT_DIR$/evoke-core/src/main/java/Evoke/Core/MetadataQueryable.java" />
-        <option value="$PROJECT_DIR$/evoke-core/src/main/java/Evoke/Core/AbstractDataObject.java" />
-        <option value="$PROJECT_DIR$/evoke-core/src/main/java/Evoke/Core/MetadataMover.java" />
         <option value="$PROJECT_DIR$/evoke-core/src/main/java/Evoke/Core/ObjectTransformer.java" />
         <option value="$PROJECT_DIR$/evoke-core/src/main/java/Evoke/Core/MetadataStorable.java" />
         <option value="$PROJECT_DIR$/evoke-core/src/main/java/Evoke/Core/Identity/AffectGameSession.java" />
@@ -160,8 +137,26 @@
         <option value="$PROJECT_DIR$/evoke-storage/evoke-storage-api/src/main/java/Evoke/Storage/StorageProvider.java" />
         <option value="$PROJECT_DIR$/evoke-core/src/main/java/Evoke/Core/StorageAdapter.java" />
         <option value="$PROJECT_DIR$/evoke-core/src/main/java/Evoke/Core/ClientDataflowNode.java" />
-        <option value="$PROJECT_DIR$/evoke-core/src/main/java/Evoke/Core/Affect/AffectVector.java" />
         <option value="$PROJECT_DIR$/evoke-storage/evoke-storage-api/src/main/java/Evoke/Storage/StorageAdapter.java" />
+        <option value="$PROJECT_DIR$/evoke-core/src/main/java/Evoke/Core/MetadataMover.java" />
+        <option value="$PROJECT_DIR$/evoke-core/src/main/java/Evoke/Core/AbstractDataObject.java" />
+        <option value="$PROJECT_DIR$/evoke-core/src/main/java/Evoke/Core/Control/AbstractControlProtocol.java" />
+        <option value="$PROJECT_DIR$/evoke-core/src/main/java/Evoke/Core/Control/ControlProtocol.java" />
+        <option value="$PROJECT_DIR$/evoke-core/src/main/java/Evoke/Core/Affect/SchemaDefinition.java" />
+        <option value="$PROJECT_DIR$/evoke-core/src/main/java/Evoke/Core/MoveableResult.java" />
+        <option value="$PROJECT_DIR$/evoke-core/src/main/java/Evoke/Core/Affect/VectorInspectable.java" />
+        <option value="$PROJECT_DIR$/evoke-core/src/main/java/Evoke/Core/MetadataMoveable.java" />
+        <option value="$PROJECT_DIR$/evoke-core/src/main/java/Evoke/Core/Game/OntologyDefinition.java" />
+        <option value="$PROJECT_DIR$/evoke-core/src/main/java/Evoke/Core/Game/OntologyReference.java" />
+        <option value="$PROJECT_DIR$/evoke-core/src/main/java/Evoke/Core/Session/SegmentationStrategy.java" />
+        <option value="$PROJECT_DIR$/evoke-core/src/main/java/Evoke/Core/ClientWorkerNode.java" />
+        <option value="$PROJECT_DIR$/evoke-core/src/main/java/Evoke/Core/Affect/AffectContainer.java" />
+        <option value="$PROJECT_DIR$/evoke-core/src/main/java/Evoke/Core/Affect/AffectVector.java" />
+        <option value="$PROJECT_DIR$/evoke-storage/evoke-storage-api/src/main/java/Evoke/Storage/Storable.java" />
+        <option value="$PROJECT_DIR$/evoke-core/src/main/java/Evoke/Core/Session/PlaySubject.java" />
+        <option value="$PROJECT_DIR$/evoke-client/src/main/java/Evoke/Client/GsonDataMover.java" />
+        <option value="$PROJECT_DIR$/evoke-client/src/main/java/Evoke/Client/GsonMover.java" />
+        <option value="$PROJECT_DIR$/evoke-core/src/main/java/Evoke/Core/Game/GameAction.java" />
       </list>
     </option>
   </component>
@@ -178,9 +173,10 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="y" value="23" />
-    <option name="width" value="1680" />
-    <option name="height" value="1023" />
+    <option name="x" value="1280" />
+    <option name="y" value="-175" />
+    <option name="width" value="2048" />
+    <option name="height" value="1129" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -255,6 +251,24 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="evoke-storage" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="evoke" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="evoke" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="evoke-storage" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="evoke-storage-datastore" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -439,6 +453,192 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="Core" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="evoke" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="evoke" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="evoke-core" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Core" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Session" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="evoke" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="evoke" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="evoke-core" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Core" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Game" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="evoke" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="evoke" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="evoke-core" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Core" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Affect" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="evoke" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="evoke" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="evoke-client" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="evoke" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="evoke" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="evoke-client" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="evoke" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="evoke" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="evoke-client" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="evoke" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="evoke" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="evoke-client" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Client" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -741,7 +941,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1680" height="1023" extended-state="6" />
+    <frame x="1280" y="-175" width="2048" height="1129" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="PlantUML" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -753,7 +953,7 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.29135802" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26307848" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3292683" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -791,52 +991,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/evoke-core/src/main/java/Evoke/Core/MetadataSerializer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/evoke-core/src/main/java/Evoke/Core/MetadataStorable.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/evoke-core/src/main/java/Evoke/Core/MetadataSerializer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/evoke-core/src/main/java/Evoke/Core/ClientDataflowNode.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="28" column="0" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/evoke-core/src/main/java/Evoke/Core/MetadataStorable.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/evoke-client/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/evoke-client/src/main/java/Evoke/Client/Program.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -851,7 +1005,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/evoke-core/src/main/java/Evoke/Core/ClientDataflowNode.java">
+    <entry file="file://$PROJECT_DIR$/evoke-core/src/main/java/Evoke/Core/ClientWorkerNode.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -893,13 +1047,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/evoke-core/src/main/java/Evoke/Core/Control/AbstractControlProtocol.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.31622177">
-          <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.34994698">
@@ -911,27 +1058,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.13552362">
           <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/evoke-core/src/main/java/Evoke/Core/Affect/SchemaDefinition.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.13552362">
-          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/evoke-core/src/main/java/Evoke/Core/Affect/AffectEvent.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.13552362">
-          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/evoke-core/src/main/java/Evoke/Core/Control/ProtocolDefineable.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.2936345">
-          <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -963,25 +1089,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/evoke-core/src/main/java/Evoke/Core/Affect/VectorDescribable.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.17741935">
-          <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/evoke-core/src/main/java/Evoke/Core/Game/GameMetadata.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.15207373">
           <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/evoke-core/src/main/java/Evoke/Core/Affect/VectorInspectable.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5322581">
-          <caret line="21" column="0" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1001,43 +1112,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/evoke-core/src/main/java/Evoke/Core/Identity/AffectSubject.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.27880183">
-          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/evoke-client/src/main/java/Evoke/Client/GsonDataMover.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5829493">
-          <caret line="33" column="0" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/evoke-core/src/main/java/Evoke/Core/Game/GameEvent.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.20276497">
-          <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/evoke-core/src/main/java/Evoke/Core/MetadataMover.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.17741935">
-          <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/evoke-core/src/main/java/Evoke/Core/AbstractDataObject.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3548387">
-          <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/evoke-core/src/main/java/Evoke/Core/Identity/PlaySession.java">
+    <entry file="file://$PROJECT_DIR$/evoke-core/src/main/java/Evoke/Core/Session/PlaySession.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.20276497">
           <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
@@ -1060,14 +1135,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/evoke-storage/evoke-storage-api/src/main/java/Evoke/Storage/StorageProvider.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.20276497">
-          <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/evoke-storage/evoke-storage-api/src/main/java/Evoke/Storage/AdapterRegistry.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.10138249">
@@ -1082,15 +1149,153 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.34169653">
           <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/evoke-core/src/main/java/Evoke/Core/Marshaller.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.65898615">
+          <caret line="26" column="0" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/evoke-storage/evoke-storage-datastore/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.3679809">
+          <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/evoke-core/src/main/java/Evoke/Core/Session/PlaySegment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.17741935">
+          <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/evoke-storage/evoke-storage-api/src/main/java/Evoke/Storage/ObjectTransformer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
+        <state vertical-scroll-proportion="0.12672812">
+          <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/evoke-core/src/main/java/Evoke/Core/Mover.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.38018432">
+          <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/evoke-core/src/main/java/Evoke/Core/Control/Protocol.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.55760366">
+          <caret line="22" column="1" selection-start-line="22" selection-start-column="1" selection-end-line="22" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/evoke-core/src/main/java/Evoke/Core/Control/ControlProtocol.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/evoke-core/src/main/java/Evoke/Core/MoveableResult.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.07603686">
+          <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+          <folding>
+            <element signature="e#627#628#0" expanded="true" />
+            <element signature="e#658#659#0" expanded="true" />
+            <element signature="e#902#903#0" expanded="true" />
+            <element signature="e#939#940#0" expanded="true" />
+            <element signature="e#1272#1273#0" expanded="true" />
+            <element signature="e#1310#1311#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/evoke-core/src/main/java/Evoke/Core/Affect/VectorInspectable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.50691247">
+          <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/evoke-core/src/main/java/Evoke/Core/Affect/SchemaDefinition.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.15207373">
+          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/evoke-core/src/main/java/Evoke/Core/Game/OntologyDefinition.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.17741935">
+          <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/evoke-core/src/main/java/Evoke/Core/Session/SegmentationStrategy.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.30414745">
+          <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/evoke-core/src/main/java/Evoke/Core/Game/OntologyReference.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.17741935">
+          <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_65.jdk/Contents/Home/src.zip!/java/util/Iterator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.76036865">
+          <caret line="53" column="17" selection-start-line="53" selection-start-column="17" selection-end-line="53" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_65.jdk/Contents/Home/src.zip!/java/lang/Iterable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.3329493">
+          <caret line="44" column="17" selection-start-line="44" selection-start-column="17" selection-end-line="44" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/evoke-storage/evoke-storage-api/src/main/java/Evoke/Storage/StorageProvider.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.15207373">
+          <caret line="6" column="17" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/evoke-core/src/main/java/Evoke/Core/Affect/AffectContainer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.6082949">
+          <caret line="24" column="0" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#513#514#0" expanded="true" />
+            <element signature="e#543#544#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1102,23 +1307,33 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/evoke-core/src/main/java/Evoke/Core/ClientDataflowNode.java">
+    <entry file="file://$PROJECT_DIR$/evoke-core/src/main/java/Evoke/Core/DescribableProvider.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.48156682">
-          <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.17741935">
+          <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/evoke-storage/evoke-storage-datastore/pom.xml">
+    <entry file="file://$PROJECT_DIR$/evoke-core/src/main/java/Evoke/Core/Affect/AffectVector.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-9.935484">
-          <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.25345623">
+          <caret line="10" column="22" selection-start-line="10" selection-start-column="22" selection-end-line="10" selection-end-column="22" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/evoke-client/src/main/java/Evoke/Client/GsonMover.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.12672812">
+          <caret line="17" column="30" selection-start-line="17" selection-start-column="30" selection-end-line="17" selection-end-column="30" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/evoke-core/src/main/java/Evoke/Core/MetadataStorable.java">
+    <entry file="file://$PROJECT_DIR$/evoke-core/src/main/java/Evoke/Core/Session/PlaySubject.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.40552995">
           <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
@@ -1126,26 +1341,67 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/evoke-core/src/main/java/Evoke/Core/MetadataSerializer.java">
+    <entry file="file://$PROJECT_DIR$/evoke-storage/evoke-storage-api/src/main/java/Evoke/Storage/Storable.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.65898615">
-          <caret line="26" column="0" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.20276497">
+          <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/evoke-core/src/main/java/Evoke/Core/Affect/AffectVector.java">
+    <entry file="file://$PROJECT_DIR$/evoke-core/src/main/java/Evoke/Core/Moveable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.38018432">
+          <caret line="15" column="9" selection-start-line="15" selection-start-column="9" selection-end-line="15" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_65.jdk/Contents/Home/src.zip!/java/lang/String.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.7638249">
+          <caret line="2938" column="25" selection-start-line="2938" selection-start-column="25" selection-end-line="2938" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_65.jdk/Contents/Home/src.zip!/java/util/Date.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.45967743">
+          <caret line="790" column="15" selection-start-line="790" selection-start-column="15" selection-end-line="790" selection-end-column="15" />
+          <folding>
+            <element signature="e#34244#34245#0" expanded="false" />
+            <element signature="e#34289#34290#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/evoke-core/src/main/java/Evoke/Core/Game/GameAction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.12672812">
+          <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#898#899#0" expanded="true" />
+            <element signature="e#932#933#0" expanded="true" />
+            <element signature="e#1212#1213#0" expanded="true" />
+            <element signature="e#1245#1246#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/evoke-core/src/main/java/Evoke/Core/ClientWorkerNode.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+          <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/evoke-core/src/main/java/Evoke/Core/MetadataSendable.java">
+    <entry file="file://$PROJECT_DIR$/evoke-core/src/main/java/Evoke/Core/ClientReceiver.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.07603686">
-          <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.15811089">
+          <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
           <folding />
         </state>
       </provider>

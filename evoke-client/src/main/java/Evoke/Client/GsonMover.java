@@ -4,19 +4,20 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.io.OutputStreamWriter;
 import java.net.Socket;
+import java.util.Date;
 
 import com.google.gson.Gson;
 import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
 
-import Evoke.Core.MetadataMover;
-import Evoke.Core.MetadataSendable;
+import Evoke.Core.Moveable;
+import Evoke.Core.Mover;
+import Evoke.Core.MoveableResult;
 
 /**
- * Created by lambeaux on 3/6/16.
- *
+ * Gson implementation of the Mover. This is the default mover.
  */
-public class GsonDataMover implements MetadataMover {
+public class GsonMover implements Mover {
     private Gson gson;
 
     private JsonWriter clientSender;
@@ -25,28 +26,27 @@ public class GsonDataMover implements MetadataMover {
 
     private Socket clientSocket;
 
-    public GsonDataMover() {
+    public GsonMover() {
         this.gson = new Gson();
         this.clientSocket = null;
         this.clientSender = null;
         this.clientReceiver = null;
     }
 
-    public boolean send(MetadataSendable sendable) {
+    public MoveableResult move(Moveable moveable) {
         if (clientSocket == null) {
-            throw new NullPointerException("Cannot send data with null socket.");
+            throw new NullPointerException("Cannot move data with null socket.");
         } else {
-            gson.toJson(sendable, sendable.getClass(), clientSender);
-            return true;
+            gson.toJson(moveable, moveable.getClass(), clientSender);
+            return new MoveableResult(moveable, new Date(), true);
         }
     }
 
-    public MetadataSendable receive() {
+    public Moveable receive() {
         if (clientSocket == null) {
             throw new NullPointerException("Cannot receive data with null socket.");
         } else {
-            MetadataSendable received = gson.fromJson(clientReceiver, MetadataSendable.class);
-            return received;
+            return gson.fromJson(clientReceiver, Moveable.class);
         }
     }
 

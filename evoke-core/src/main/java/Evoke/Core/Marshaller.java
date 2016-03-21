@@ -4,7 +4,7 @@ package Evoke.Core;
  * Created by lambeaux on 2/21/16.
  *
  */
-public interface MetadataSerializer {
+public interface Marshaller {
     /**
      * Take a Java object and transform it into a metadata format determined by the implementation
      * of this transformer.
