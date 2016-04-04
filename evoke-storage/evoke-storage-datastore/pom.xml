@@ -12,5 +12,22 @@
     <groupId>lambeaux.frameworks.evoke.storage.datastore</groupId>
     <artifactId>evoke-storage-datastore</artifactId>
 
+    <dependencies>
+        <dependency>
+            <groupId>lambeaux.frameworks.evoke.storage.api</groupId>
+            <artifactId>evoke-storage-api</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.google.appengine</groupId>
+            <artifactId>appengine-api-1.0-sdk</artifactId>
+            <version>1.9.25</version>
+        </dependency>
+        <dependency>
+            <groupId>commons-beanutils</groupId>
+            <artifactId>commons-beanutils</artifactId>
+            <version>LATEST</version>
+        </dependency>
+    </dependencies>
 
 </project>

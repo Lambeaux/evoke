@@ -16,6 +16,12 @@
         <module>evoke-storage-api</module>
         <module>evoke-storage-datastore</module>
     </modules>
-
+    <dependencies>
+        <dependency>
+            <groupId>lambeaux.frameworks.evoke.core</groupId>
+            <artifactId>evoke-core</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+    </dependencies>
 
 </project>

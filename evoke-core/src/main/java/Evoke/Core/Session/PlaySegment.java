@@ -1,7 +1,7 @@
 package Evoke.Core.Session;
 
 /**
- * Created by lambeaux on 3/18/16.
+ * Represents a set of measurements observed during a {@link PlaySession}.
  */
 public class PlaySegment {
 }
